@@ -143,6 +143,51 @@ nav a:last-child {
   max-height: 150px;
   flex-basis: calc(50% - 1em);
   display: flex;
-  flex-direction: flex-end;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size:  0.9rem;
 }
 
+.flex-item:first-child{
+  flex-basis: 100%;
+  min-height: 400px;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.contact address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-style: normal;
+  margin: 0 0.2rem 0.1rem;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+}
+
+.contact address a:hover{
+  color: red;
+}
+
+.calendar {
+  background-image: url(../images/02-run-buddy.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.calculator {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.weather {
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.page {
+  background-image: url(../images/02-portfolio-2.jpg);
+}
