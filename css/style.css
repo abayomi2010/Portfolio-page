@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary: rgba(193, 188, 219, 1);
+  --secondary: rgba(148, 179, 226, 1);
+  --tertiary: rgba(49, 29, 138, 1);
+  --dark: rgba(23, 26, 25);
+  --light: rgba(248, 241, 241), 1;
+
+}
 body {
   margin: 0;
   padding: 0;
@@ -21,3 +29,71 @@ h6 {
 p {
   margin: 0;
 }
+
+header{
+  padding: 15px 0 ;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--tertiary);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: var(--secondary);
+  background-image: linear-gradient(270 deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.3rem;
+}
+
+nav a:hover{
+  background-size: 100% 100%;
+  color: var(--primary);
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+.hero-banner{
+  padding:2%;
+  background-color: rgb(124, 137, 201);
+  background-image: url(../images/02-hero-bg.jpg), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner div{
+  flex:0, 0, 90%;
+}
+
+.hero-banner h2{
+  background-color: var(--secondary);
+  color:var(--tertiary);
+  font-size: 2.3rem;
+  padding: 5px 10px;
+  margin: 0;
+  line-height: 1.7;
+  display: inline;
+}
+
