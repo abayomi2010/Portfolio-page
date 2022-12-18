@@ -191,3 +191,63 @@ nav a:last-child {
 .page {
   background-image: url(../images/02-portfolio-2.jpg);
 }
+
+.quiz{
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: auto;
+  background-repeat: no-repeat
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin: 0 0 10px 0;
+    justify-content: center;
+    align-items: center
+  }
+
+  header h1{
+    width:100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+
+  .page-section > h2{
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child{
+    flex-basis: 100%;
+  }
+  
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
