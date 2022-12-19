@@ -3,10 +3,10 @@
 }
 
 :root{
-  --primary: rgba(193, 188, 219, 1);
-  --secondary: rgba(148, 179, 226, 1);
-  --tertiary: rgba(49, 29, 138, 1);
-  --dark: rgba(23, 26, 25);
+  --primary: rgba(0, 2, 22,1);
+  --secondary: rgba(4, 35, 80,1);
+  --tertiary: rgba(236, 235, 241, 1);
+  --dark: rgba(12, 14, 13, 1);
   --light: rgba(248, 241, 241), 1;
 
 }
