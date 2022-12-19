@@ -246,8 +246,10 @@ nav a:last-child {
     text-align: center;
   }
 
-  .contact address {
-    flex-direction: row;
+  .contact address{
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    align-content: center;
   }
 }
